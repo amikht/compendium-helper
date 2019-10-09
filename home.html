@@ -6,15 +6,28 @@
         <style>
             body {
                 background-color: #262626
+
             }
             #title {
                 text-align: center;
                 color: #60f030;
                 padding-bottom: 0%;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 3em;
+            }
+            #flex-container {
+                display: flex;
+                height: 100%;
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
             #tagline {
                 text-align: center;
                 color: #CCC;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 1.5em;
             }
             #title-box {
                 display: flex;
@@ -23,27 +36,33 @@
                 justify-content: center;
                 margin: auto;
                 background-color: black;
-                border-radius: 100px;
+                border-radius: 75px;
                 padding: 20px;
                 width: 40%;
             }
             #start-button {
-                width: 50%;
-                color: white;
+                /* width: 50%; */
+                background-color: #CCC;
+                color: black;
                 height: 50px;
                 border-radius: 25px;
                 align-content: center;
                 margin: auto;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 1.5em;
+                padding-left: 2ch;
+                padding-right: 2ch;
             }
         </style>
     </head>
 
     <body>
-
-        <div id="title-box">
-            <h1 id="title">The Compendium</h1>
-            <h2 id="tagline">Create the Perfect Playlist for All Your Favorites</h2>
-            <button id="start-button">Get Started</button>
+        <div id="flex-container">
+            <div id="title-box">
+                <h1 id="title">The Compendium</h1>
+                <h2 id="tagline">Create the Perfect Playlist for All Your Favorites</h2>
+                <button id="start-button">Get Started</button>
+            </div>
         </div>
     </body>
 </html>
