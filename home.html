@@ -4,32 +4,46 @@
     <head>
         <title>The Compendium</title>
         <style>
-            body {
-                background-color: #262626
+            @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+            body {
+                margin: 0;
+                overflow: hidden;
             }
+
             #title {
                 text-align: center;
-                color: #60f030;
+                color: #000000;
                 padding-bottom: 0%;
-                font-family: Helvetica, Arial, sans-serif;
+                font-family: Montserrat, Helvetica, Arial, sans-serif;
                 font-size: 3em;
+                font-weight: bold;
             }
+
             #flex-container {
                 display: flex;
                 height: 100%;
                 width: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                background-image: radial-gradient(farthest-corner at 0% 0%, #ea4, #f5b);
+                background-repeat: no-repeat;
+                height: 100%;
             }
+
             #tagline {
                 text-align: center;
-                color: #CCC;
-                font-family: Helvetica, Arial, sans-serif;
+                font-weight: normal;
+                color: #FFF;
+                font-family: Montserrat, Helvetica, Arial, sans-serif;
                 font-size: 1.5em;
             }
-            #title-box {
+
+            #description-bubble {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -38,31 +52,38 @@
                 background-color: black;
                 border-radius: 75px;
                 padding: 20px;
-                width: 40%;
+                width: 60%;
             }
+
             #start-button {
                 /* width: 50%; */
-                background-color: #CCC;
-                color: black;
+                background-color: #1DB954;
+                color: #FFF;
                 height: 50px;
                 border-radius: 25px;
+                border: none;
                 align-content: center;
                 margin: auto;
-                font-family: Helvetica, Arial, sans-serif;
+                font-family: Montserrat, Helvetica, Arial, sans-serif;
                 font-size: 1.5em;
                 padding-left: 2ch;
                 padding-right: 2ch;
             }
+
         </style>
     </head>
 
     <body>
         <div id="flex-container">
+            <div id="title-bar"></div>
             <div id="title-box">
-                <h1 id="title">The Compendium</h1>
-                <h2 id="tagline">Create the Perfect Playlist for All Your Favorites</h2>
-                <button id="start-button">Get Started</button>
+                <h1 id="title">Create the Perfect Playlist</h1>
+                <div id="description-bubble">
+                    <h2 id="tagline">Bring together all of your favorite artists and all of your favorite songs in the ultimate playlist</h2>
+                    <button id="start-button">Get Started</button>
+                </div>
             </div>
+            <div id="bottom-bar"></div>
         </div>
     </body>
 </html>
