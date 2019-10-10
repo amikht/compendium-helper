@@ -11,14 +11,32 @@
                 margin: 0;
                 overflow: hidden;
             }
+            a {
+                color: #001630;
+            }
 
             #title {
                 text-align: center;
-                color: #000000;
+                color: #001630;
                 padding-bottom: 0%;
                 font-family: Montserrat, Helvetica, Arial, sans-serif;
                 font-size: 3em;
                 font-weight: bold;
+            }
+
+            #title-bar{
+                text-align: center;
+            }
+            #bottom-bar {
+                text-align: center;
+            }
+
+            .bar-contents {
+                text-align: center;
+                font-weight: normal;
+                color: #001630;
+                font-family: Montserrat, Helvetica, Arial, sans-serif;
+                font-size: 1.5em;
             }
 
             #flex-container {
@@ -29,8 +47,8 @@
                 top: 0;
                 left: 0;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                justify-content: space-between;
+                align-items: stretch;
                 background-image: radial-gradient(farthest-corner at 0% 0%, #ea4, #f5b);
                 background-repeat: no-repeat;
                 height: 100%;
@@ -50,7 +68,7 @@
                 align-items: center;
                 justify-content: center;
                 margin: auto;
-                background-color: black;
+                background-color: #001630;
                 border-radius: 75px;
                 padding: 20px;
                 width: 60%;
@@ -76,7 +94,11 @@
 
     <body>
         <div id="flex-container">
-            <div id="title-bar"></div>
+            <div id="title-bar">
+                <div class="bar-contents">
+                    The Compendium
+                </div>    
+            </div>
             <div id="title-box">
                 <h1 id="title">Create the Perfect Playlist</h1>
                 <div id="description-bubble">
@@ -84,7 +106,11 @@
                     <button id="start-button">Get Started</button>
                 </div>
             </div>
-            <div id="bottom-bar"></div>
+            <div id="bottom-bar">
+                <div class="bar-contents">
+                    <a href="https://github.com/amikht/compendium-helper/">About This Project</a>
+                </div>
+            </div>
         </div>
     </body>
 </html>
