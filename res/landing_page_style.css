@@ -5,36 +5,32 @@ body {
     overflow: hidden;
 }
 
-a {
+.dark_txt {
     color: #001630;
 }
 
-#title {
+.light_txt {
+    color: #fff;
+}
+
+.centered {
     text-align: center;
-    color: #001630;
+}
+
+.title {
     padding-bottom: 0%;
     font-family: Montserrat, Helvetica, Arial, sans-serif;
     font-size: 3em;
     font-weight: bold;
 }
 
-#title-bar{
-    text-align: center;
-}
-
-#bottom-bar {
-    text-align: center;
-}
-
 .bar-contents {
-    text-align: center;
     font-weight: normal;
-    color: #001630;
     font-family: Montserrat, Helvetica, Arial, sans-serif;
     font-size: 1.5em;
 }
 
-#flex-container {
+.flex-container {
     display: flex;
     height: 100%;
     width: 100%;
@@ -49,15 +45,13 @@ a {
     height: 100%;
 }
 
-#tagline {
-    text-align: center;
+.tagline {
     font-weight: normal;
-    color: #FFF;
     font-family: Montserrat, Helvetica, Arial, sans-serif;
     font-size: 1.5em;
 }
 
-#description-bubble {
+.description-bubble {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,10 +63,9 @@ a {
     width: 60%;
 }
 
-#start-button {
+.start-button {
     /* width: 50%; */
     background-color: #1DB954;
-    color: #FFF;
     height: 50px;
     border-radius: 25px;
     border: none;
